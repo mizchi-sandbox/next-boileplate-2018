@@ -2,5 +2,15 @@
   "name": "newnext",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "author": "mizchi <miz404@gmail.com>",
+  "dependencies": {
+    "@zeit/next-typescript": "^1.1.1",
+    "next": "^7.0.1",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  },
+  "devDependencies": {
+    "@types/react": "^16.4.14"
+  }
 }
