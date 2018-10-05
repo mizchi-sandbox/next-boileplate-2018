@@ -6,7 +6,8 @@
 - prettier
 - redux / next-redux-wrapper
 - styled-components
-- TODO: Async Example
+- Async Loading Example
+- ServiceWorker
 - TODO: Auth
 - TODO: Scroll Restore
 - TODO: Snapshot test

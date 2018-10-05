@@ -1,19 +1,24 @@
 const next = require("next");
+const url = require("url");
+const { createServer } = require("http");
+const { createReadStream } = require("fs");
 const routes = require("./routes");
 
 const app = next({ dev: process.env.NODE_ENV !== "production" });
-const handler = routes.getRequestHandler(app);
+const handle = routes.getRequestHandler(app);
 
-// With express
-const express = require("express");
 app.prepare().then(() => {
-  express()
-    .use(handler)
-    .listen(3100);
-});
-
-// Without express
-const { createServer } = require("http");
-app.prepare().then(() => {
-  createServer(handler).listen(3000);
+  createServer((req, res) => {
+    const parsedUrl = url.parse(req.url, true);
+    const { pathname } = parsedUrl;
+    if (pathname === "/sw.js") {
+      res.setHeader("content-type", "text/javascript");
+      createReadStream("./serviceWorker/index.js").pipe(res);
+    } else {
+      handle(req, res, parsedUrl);
+    }
+  }).listen(3000, err => {
+    if (err) throw err;
+    console.log("> Ready on http://localhost:3000");
+  });
 });
