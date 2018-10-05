@@ -1,8 +1,7 @@
-import React from "react";
+import * as React from "react";
 
 export default class Lazy extends React.Component<any> {
   static async getInitialProps(_ctx: any) {
-    console.log("start lazy loading");
     await new Promise(r => setTimeout(r, 1000));
     return { p: 1 };
   }

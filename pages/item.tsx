@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 
 export default class Item extends React.Component<any> {
   static async getInitialProps(ctx: any) {

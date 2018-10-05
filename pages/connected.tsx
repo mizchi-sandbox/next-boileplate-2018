@@ -1,21 +1,20 @@
-import React from "react";
+import * as React from "react";
 import { connect } from "react-redux";
+import { RootState } from "reducers";
+import withStore from "../components/utils/withStore";
 
-export default class Connected extends React.Component<any> {
-  static async getInitialProps(ctx: any) {
-    ctx.store.dispatch({ type: "FOO", payload: "foo-on-connected" });
-  }
-  render() {
-    return (
-      <div>
-        <h1>Connceted</h1>
-        <ConnectedState />
-      </div>
-    );
-  }
-}
+export default withStore(async (store: any) => {
+  store.dispatch({ type: "FOO", payload: "foo-on-connected" });
+})((_props: any) => {
+  return (
+    <div>
+      <h1>Connceted</h1>
+      <Connected />
+    </div>
+  );
+});
 
-const ConnectedState = connect(s => s)(props => {
+const Connected = connect((s: RootState) => s.foo)(props => {
   return (
     <div>
       <span>store state</span>

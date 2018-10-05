@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <h1>
+    Next.js boilerplate 2018 late
+  </h1>
+  <a
+    href="/"
+    onClick={[Function]}
+  >
+    index
+  </a>
+  |
+  <a
+    href="/about"
+    onClick={[Function]}
+  >
+    about
+  </a>
+  |
+  <a
+    href="/dynamic"
+    onClick={[Function]}
+  >
+    dynamic
+  </a>
+  |
+  <a
+    href="lazy"
+    onClick={[Function]}
+  >
+    lazy
+  </a>
+  |
+  <a
+    href="/item/a"
+    onClick={[Function]}
+  >
+    /item/a
+  </a>
+  |
+  <a
+    href="/item/b"
+    onClick={[Function]}
+  >
+    /item/b
+  </a>
+  |
+  <a
+    href="/connected"
+    onClick={[Function]}
+  >
+    /connected
+  </a>
+</div>
+`;
