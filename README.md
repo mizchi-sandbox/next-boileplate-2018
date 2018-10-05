@@ -3,3 +3,9 @@
 - typescript
 - next-routes
 - jest
+- prettier
+- redux / next-redux-wrapper
+- TODO: eslint
+- TODO: Scroll Restore
+- TODO: Auth
+- TODO: styled-components

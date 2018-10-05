@@ -1,5 +1,7 @@
 const routes = require("next-routes");
 
 module.exports = routes()
-  .add("about")
+  .add("index", "/")
+  .add("connected", "/connected")
+  .add("about", "/about")
   .add("item", "/item/:id");

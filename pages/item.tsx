@@ -1,8 +1,8 @@
 import React from "react";
 
 export default class Item extends React.Component<any> {
-  static async getInitialProps({ query }: any) {
-    return query;
+  static async getInitialProps(ctx: any) {
+    return ctx.query;
   }
   render() {
     return (
