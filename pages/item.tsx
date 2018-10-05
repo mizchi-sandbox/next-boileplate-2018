@@ -11,6 +11,5 @@ export default class Item extends React.Component<any> {
         <div>{JSON.stringify(this.props)}</div>
       </div>
     );
-    // this.props.url.query.slug
   }
 }

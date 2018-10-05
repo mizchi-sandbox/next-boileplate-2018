@@ -8,6 +8,8 @@
     "dev": "node server.js",
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
+    "test": "jest",
+    "test-cov": "jest --coverage",
     "test:types": "tsc -p . --noEmit"
   },
   "dependencies": {
@@ -19,8 +21,11 @@
     "react-dom": "^16.5.2"
   },
   "devDependencies": {
+    "@types/jest": "^23.3.3",
     "@types/next": "^7.0.0",
     "@types/react": "^16.4.14",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.3",
     "typescript": "^3.1.1"
   }
 }
