@@ -5,7 +5,7 @@
 - jest
 - prettier
 - redux / next-redux-wrapper
-- TODO: eslint
-- TODO: Scroll Restore
+- styled-components
 - TODO: Auth
-- TODO: styled-components
+- TODO: Async Example
+- TODO: Scroll Restore

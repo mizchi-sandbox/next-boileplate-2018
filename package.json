@@ -21,7 +21,8 @@
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-redux": "^5.0.7",
-    "redux": "^4.0.0"
+    "redux": "^4.0.0",
+    "styled-components": "^3.4.9"
   },
   "devDependencies": {
     "@types/jest": "^23.3.3",
@@ -29,6 +30,8 @@
     "@types/react": "^16.4.14",
     "@types/react-redux": "^6.0.9",
     "@types/redux": "^3.6.0",
+    "@types/styled-components": "^3.0.1",
+    "babel-plugin-styled-components": "^1.8.0",
     "eslint": "^5.6.1",
     "eslint-config-prettier": "^3.1.0",
     "eslint-plugin-prettier": "^3.0.0",
