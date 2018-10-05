@@ -6,6 +6,9 @@
 - prettier
 - redux / next-redux-wrapper
 - styled-components
-- TODO: Auth
 - TODO: Async Example
+- TODO: Auth
 - TODO: Scroll Restore
+- TODO: Snapshot test
+- TODO: Add types to next
+- TODO: Show loading spinner on transition

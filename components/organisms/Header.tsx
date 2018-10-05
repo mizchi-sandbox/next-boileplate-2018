@@ -13,6 +13,14 @@ export default () => (
       <a>about</a>
     </Link>
     |
+    <Link route="dynamic">
+      <a>dynamic</a>
+    </Link>
+    |
+    <Link route="lazy">
+      <a>lazy</a>
+    </Link>
+    |
     <Link route="item" params={{ id: "a" }}>
       <a>/item/a</a>
     </Link>
