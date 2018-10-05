@@ -4,13 +4,23 @@
   "main": "index.js",
   "license": "MIT",
   "author": "mizchi <miz404@gmail.com>",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js",
+    "test:types": "tsc -p . --noEmit"
+  },
   "dependencies": {
     "@zeit/next-typescript": "^1.1.1",
+    "express": "^4.16.3",
     "next": "^7.0.1",
+    "next-routes": "^1.4.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2"
   },
   "devDependencies": {
-    "@types/react": "^16.4.14"
+    "@types/next": "^7.0.0",
+    "@types/react": "^16.4.14",
+    "typescript": "^3.1.1"
   }
 }
